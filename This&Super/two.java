@@ -1,0 +1,35 @@
+class A
+{
+    public A()
+    {
+        super();
+        System.out.println("In A");
+    }
+    public A(int x)
+    {
+        super();
+        System.out.println("In A int");
+    }
+}
+
+class B extends A
+{
+    public B()
+    {
+        super();
+        System.out.println("In B");
+    }
+    public B(int x)
+    {
+        super(x);
+        System.out.println("In B int");
+    }
+}
+
+public class two
+{
+    public static void main(String[] args)
+    {
+        B obj = new B(5);
+    }
+}
